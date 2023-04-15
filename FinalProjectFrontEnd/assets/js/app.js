@@ -1,3 +1,6 @@
+
+
+
 $('.slider').slick({
     infinite: true,
     speed: 100,
@@ -119,12 +122,28 @@ $('.slider').slick({
     })
 
 
-
     const phoneSearch =document.querySelector(".phone-search")
     const phoneSearchPage =document.querySelector(".phone-search-page")
-
+    
 
     phoneSearch.addEventListener("click", () => {
-      phoneSearch.classList.toggle("actived");
+      // phoneSearch.classList.toggle("actived");
       phoneSearchPage.classList.toggle("actived");
+     
     })
+
+
+    const catagorySale =document.querySelector(".catagory-sale")
+    const refineBy =document.querySelector(".refine-by")
+
+    refineBy.addEventListener("click", () =>{
+      catagorySale.classList.toggle("activedd")
+    })
+    
+
+
+    
+
+    $(".jquerry-button").click(function(){
+      $(".first-div").slideToggle();
+    });

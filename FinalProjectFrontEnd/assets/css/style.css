@@ -653,15 +653,229 @@ height: calc(100% - 73px);
 }
 
 
+.returning-span {
+    font-size: 15px;
+}
+
+.returning-a {
+    color: #000;
+    transition: 0.4s;
+}
+
+.returning-a:hover{
+ color: #36b8ce;   
+}
+
+.login-button:hover{
+    background-color: #36b8ce;
+}
+
+#shipping-deliver h1 {
+    line-height: 1.5;
+    color: #000;
+    display: block;
+    letter-spacing: 3px;
+    text-rendering: optimizeLegibility;
+    font-size: 32px;
+    margin: 0 auto 15px;
+    clear: both;
+    font-weight: 600;
+    padding-top: 4px;
+}
+
+#shipping-deliver p {
+    margin: 0 0 15px;
+    line-height: 1.6em;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000;
+}
+
+.first-div p{
+    color: red !important;
+    width: 100% !important;
+    height: 400px !important;
+}
+
+
+#sale-head-photo p {
+    font-size: 16px;
+    text-align: center;
+    color: #262626;
+    font-weight: 500;
+}
+
+#sale-head-photo img {
+    width: 100%;
+}
+
+#sale-head-photo {
+    margin-bottom: 3rem;
+}
+
+.catagory-sale a {
+    display:block;
+    color: #262626;
+}
+
+li {
+    list-style-type: none !important;
+}
+
+.catagory-sale li {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.catagory-sale ul {
+    margin: 0;
+    padding: 0;
+}
+
+.catagory-sale a{
+    transition: 0.4s;
+}
+
+.catagory-sale a:hover{
+    color: #36b8ce;
+}
+
+.catagory-sale p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.shop-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    width: 100%;
+}
+
+.box img {
+    width: 100%;
+}
+
+.catagory-sale {
+    width: 20%;
+}
+
+.shop-selector {
+    display: flex;
+    justify-content: end;
+    overflow:  hidden !important;
+}
+
+
+  
+.shop-selector select {
+    background-color: #36b8ce;
+    color: white;
+    padding: 12px;
+    width: 200px;
+    font-size: 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2); 
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.span-red{
+    color: rgb(212, 45, 45);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.span-red:hover{
+    color: #36b8ce;
+}
+  
+.old-price{
+    cursor: pointer;
+}
+
+.old-price:hover{
+    color: #36b8ce;
+}
+
+.shop-selector::before {
+    content: "\f13a";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    /* height: 100%; */
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+}
+  
+.shop-selector:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+  
+.shop-selector select option {
+    padding: 30px;
+}
+  
+
+.refine-by{
+    color: #fff;
+    background-color: #262626;
+    height: 50px;
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    padding-top: 1rem;
+    margin-left: 0;
+    margin-right: 0;
+    cursor: pointer;
+}
+
+.refine-by span {
+   font-size: 15px;
+}
+
+.refine-by {
+    display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 @media (max-width: 450px) {
+
 .h-custom {
 height: 100%;
 }
+
+.login-button {
+    width: 100%;
+}
+
 }
 
 
@@ -670,15 +884,53 @@ height: 100%;
         display: block;
     }
 
+    .login-button {
+        width: 100%;
+    }
+
     .mobile-hr{
         display: block;
         width: 100%;
         
     }
 
+    .refine-by{
+        display: block;
+    }
+
+    .catagory-sale{
+        position: fixed;
+        left: -100%;
+        top: 60px;
+        gap: 0;
+        flex-direction: column !important;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+
+    }
+
+    .catagory-sale ul {
+        display: block;
+        justify-content: space-between;
+        list-style-type:none;
+    }
+
+    .catagory-sale li {
+        margin-bottom: 2rem;
+    }
+
+    .catagory-sale.activedd{
+        left: 0;
+    }
+
+
    
     .phone-search-page.actived{
-        display: block;
+        /* display: block; */
+        left: 0;
     }
 
    
@@ -692,17 +944,17 @@ height: 100%;
         width: 100%;
         text-align: center;
         transition: 0.3s;
-
+        height: 10000px !important;
     }
     .phone-search-page input {
         display: block;
         justify-content: space-between;
         list-style-type:none;
+        width: 100%;
+        height: 60px;
+
     }
 
-    .phone-search-page.actived{
-        left: 0;
-    }
 
     .hamburger {
         display: block;
@@ -858,6 +1110,8 @@ height: 100%;
     width: 100%;
 }
 
+
+
 .full-contact {
     display: block;
     
@@ -885,8 +1139,15 @@ height: 100%;
     margin-bottom: 1rem;
 }
 
+.shop-selector select{
+    width: 100% !important;
+}
+
 
 }
+
+
+
 
 @media (min-width: 768px) and (max-width: 1024px) {
   
