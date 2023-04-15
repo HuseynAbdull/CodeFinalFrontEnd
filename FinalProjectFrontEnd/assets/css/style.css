@@ -479,8 +479,8 @@ a{
     color: red;
 }
 
-.right-contact a{
-    border: 1px solid;
+.send-button{
+    border: 1px solid ;
     padding: 13px 20px;
     text-align: center;
     line-height: 1.2;
@@ -849,14 +849,147 @@ li {
 
 }
 
+#product-detail{
+    margin-top: 2rem;
+}
+
+#product-detail h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-detail-full {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount-photo img{
+    width: 100%;
+}
+
+.product-image {
+    width: 40%;
+}
+
+.add-to-cart {
+    width: 40%;
+}
+
+.add-to-cart span{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.old-price {
+    display: inline !important;
+}
+
+.option-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.span-blue{
+    color: #36b8ce;
+    font-size: 16px;
+    font-weight: 700;
+}
 
 
 
+.send-button:hover{
+ background-color:#3bb7cc;
+ border-color: #cccccc;
+}
+
+.wishlist-button {
+    color: rgb(0, 186, 208);
+    background: none;
+    border-radius: 100%;
+    margin: 0px;
+    opacity: 0.9;
+    border: none;
+    line-height: normal;
+    height: 40px;
+    padding: 0px 20px;
+    font-size: 14px;
+    text-align: center;
+    /* overflow: hidden; */
+    outline: none;
+    position: relative;
+}
+
+.wishlist-button:hover::before{
+    content: "ADD TO WISHLIST";
+    position: absolute;
+    width: 10rem;
+    height: 50px;
+    text-align: center;
+    padding-top: 1rem;
+    border: #36b8ce 1px solid;
+    top: -80%;
+    left: 70%;
+    color: #36b8ce;
+    z-index: 3;
+    background-color:white;
+}
+
+.description-full ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
 
 
+.description-full li{
+    display: inline;
+}
 
+.description-full a{
+    color: #262626;
+    margin-right: 2rem;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 700;
+}
 
+.description-full a:hover {
+    color: #36b8ce;
+}
 
+.description {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.description p{
+    width: 40%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.description img {
+    width: 40%;
+}
+
+.detail {
+    margin-top: 2rem;
+}
+
+.detail p{
+    font-size: 17px;
+    color: #262626;
+    margin-top: 1rem;
+}
+
+.active-description{
+    background-color: gray;
+    color: #fff;
+}
 
 
 
@@ -1143,6 +1276,20 @@ height: 100%;
     width: 100% !important;
 }
 
+.product-detail-full {
+    display: block;
+    
+}
+
+.product-image {
+    width: 100%;
+}
+
+.add-to-cart {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 4rem;
+}
 
 }
 

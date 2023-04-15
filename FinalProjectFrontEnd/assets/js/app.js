@@ -1,6 +1,5 @@
 
 
-
 $('.slider').slick({
     infinite: true,
     speed: 100,
@@ -141,9 +140,25 @@ $('.slider').slick({
     })
     
 
-
-    
-
     $(".jquerry-button").click(function(){
       $(".first-div").slideToggle();
     });
+
+    
+    let buttons = document.querySelectorAll(".links button");
+    for (let btn of buttons) {
+      btn.onclick = function() {
+        this.classList.add("active-description")
+      }
+    };
+
+
+
+  
+
+
+
+
+
+
+
