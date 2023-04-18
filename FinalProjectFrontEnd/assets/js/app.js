@@ -121,15 +121,15 @@ $('.slider').slick({
     })
 
 
-    const phoneSearch =document.querySelector(".phone-search")
-    const phoneSearchPage =document.querySelector(".phone-search-page")
+    // const phoneSearch =document.querySelector(".phone-search")
+    // const phoneSearchPage =document.querySelector(".phone-search-page")
     
 
-    phoneSearch.addEventListener("click", () => {
-      // phoneSearch.classList.toggle("actived");
-      phoneSearchPage.classList.toggle("actived");
+    // phoneSearch.addEventListener("click", () => {
+    //   // phoneSearch.classList.toggle("actived");
+    //   phoneSearchPage.classList.toggle("actived");
      
-    })
+    // })
 
 
     const catagorySale =document.querySelector(".catagory-sale")
@@ -145,12 +145,12 @@ $('.slider').slick({
     });
 
     
-    let buttons = document.querySelectorAll(".links button");
-    for (let btn of buttons) {
-      btn.onclick = function() {
-        this.classList.add("active-description")
-      }
-    };
+    // let buttons = document.querySelectorAll(".links button");
+    // for (let btn of buttons) {
+    //   btn.onclick = function() {
+    //     this.classList.add("active-description")
+    //   }
+    // };
 
 
 

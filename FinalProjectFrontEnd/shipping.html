@@ -125,13 +125,60 @@
 
 
     </section>
-     <button class="jquery-button w-100">ADDITIONAL INFORMATION
-      <div class="first-div">
-        <p>All orders are subject to review and may require additional processing time.
-         Please note: Weekends and holidays are not considered business days, and processing times are not affected by the shipping method you select.
+     
+    <section>
+      <div class="container">
+        <div id="flip">ADDITIONAL INFORMATION</div>
+        <div id="panel">All orders are subject to review and may require additional processing 
+          time.Please note: Weekends and holidays are not considered business days, 
+          and processing times are not affected by the shipping method you select.
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h4 class="us-domestic">US Domestic (Shipping Time Additional to the Processing Time)</h4>
+        <div class="list-all">
+          <ul class="list-group list-custom">
+            <li class="list-group-item"><b>Shipping Method</b></li>
+            <li class="list-group-item">USPS First Class Mail</li>
+            <li class="list-group-item">UPS One Day</li>
+          </ul>
+          <ul class="list-group list-custom">
+            <li class="list-group-item"><b>Shipping Time</b></li>
+            <li class="list-group-item">7-9 business days</li>
+            <li class="list-group-item">Next Business Day</li>
+          </ul>
+          <ul class="list-group list-custom-one">
+            <li class="list-group-item"><b>Price</b></li>
+            <li class="list-group-item">FREE</li>
+            <li class="list-group-item">$30.00</li>
+          </ul>
+        </div>
+        <h4 class="us-domestic">International Rates</h4>
+        <p class="ship-p">*We are not responsible for lost or stolen mail for
+           international orders. We are also not responsible for duty / customs fees.
         </p>
+        <div class="list-all">
+          <ul class="list-group list-custom">
+            <li class="list-group-item"><b>Shipping Method</b></li>
+            <li class="list-group-item">USPS International Mail (includes most countries)</li>
+          </ul>
+          <ul class="list-group list-custom">
+            <li class="list-group-item"><b>Shipping Time</b></li>
+            <li class="list-group-item">Next Business Day</li>
+          </ul>
+          <ul class="list-group list-custom-one">
+            <li class="list-group-item"><b>Price</b></li>
+            <li class="list-group-item">$20.00</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     </div>
-     </button>
+     
             
 
 
@@ -270,11 +317,20 @@
         </section>
 
     </footer>
-
+    
+   
+         
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="assets/js/app.js"></script>
+    <script> 
+      $(document).ready(function(){
+        $("#flip").click(function(){
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
+    
 
 
 </body>
