@@ -18,3 +18,13 @@ let buttons = document.querySelectorAll(".links button");
       }
     };
 
+var searchButtons=document.getElementsByClassName('phone-search-btn')
+for(let searchButton of searchButtons){
+  searchButton.addEventListener('click', function(){
+    console.log("salam");
+let searchSections=document.getElementsByClassName('right-header-bottom')
+for(let searchSection of searchSections){
+  searchSection.classList.toggle('active-for-search')
+}
+  })
+}
